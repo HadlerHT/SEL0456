@@ -1,17 +1,7 @@
 #include <stdio.h>
-
-double half (double x) {
-	return x * 0.5;
-}
-
-double square (double x) {
-	return x * x;
-}
-
-double cube (double x) {
-	return x * x * x;
-}
-
+#include "half.h"
+#include "square.h"
+#include "cube.h"
 
 int main (void) {
 
