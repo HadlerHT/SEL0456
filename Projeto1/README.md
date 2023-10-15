@@ -1,4 +1,4 @@
-### Projeto1
+# Projeto1
   Diretório contendo os arquivos do Trabalho 1 (uso de Git e Makefile).
 
   ***Descrição:***
