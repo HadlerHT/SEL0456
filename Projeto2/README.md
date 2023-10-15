@@ -1,4 +1,4 @@
-### Projeto2
+# Projeto2
   Diretório contendo os arquivos do Trabalho 2 (classes em Python).
 
   ***Descrição:***
