@@ -35,4 +35,4 @@ jobs:
     
     - name: Running python file
       run: |
-        python Trabalho3/src/main.py
+        python Projeto3/src/main.py
