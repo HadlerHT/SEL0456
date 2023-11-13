@@ -2,7 +2,7 @@ name: Python Workflow
 
 on:
   push:
-    branches: [ "branch1" ]
+    branches: [ "branch2" ]
 
   pull_request:
       branches: [ "main" ]
@@ -35,4 +35,4 @@ jobs:
     
     - name: Running python file
       run: |
-        python Projeto3/src/main.py
+        pytest Projeto3/test/test_pytest.py
