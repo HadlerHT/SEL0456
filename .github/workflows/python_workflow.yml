@@ -38,5 +38,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         
     - name: Running python file
-      run: pytest Projeto3/test/test_pytest.py
+      run: pytest Projeto3
         
