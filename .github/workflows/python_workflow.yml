@@ -2,7 +2,7 @@ name: Python Workflow
 
 on:
   push:
-    branches: [ "branch1" ]
+    branches: [ "branch2" ]
 
   pull_request:
       branches: [ "main" ]
@@ -27,12 +27,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    
+
+    - name: Set up environment
+      run: |
+        export PYTHONPATH=$GITHUB_WORKSPACE/Projeto3
+      
     - name: Lint with flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    
+        
     - name: Running python file
-      run: |
-        python Projeto3/src/main.py
+      run: pytest Projeto3
+        

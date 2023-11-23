@@ -47,7 +47,6 @@ def main():
     # Password.save(hash=Password.hash(password=correct_password))
 
     entry = Password.get_entry()
-
     print(entry, Password.verify(entry))
 
 
