@@ -1,4 +1,4 @@
-# API Simples em Flask
+# API em Flask (Projeto 4)
 
 Este é um projeto simples de API desenvolvido em Flask que oferece funcionalidades para cálculo de fatorial e números da sequência de Fibonacci. A API valida as entradas, realiza os cálculos correspondentes e retorna os resultados em formato JSON.
 
