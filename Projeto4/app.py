@@ -26,6 +26,9 @@ def api():
     for key in set(data.keys()).intersection(process.keys()):
         ans[key] = process[key](data[key])    
 
+    if not ans:
+        return {"error": "No valid keys were found"}
+
     return ans
 
 if __name__ == '__main__':
